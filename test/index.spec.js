@@ -4,6 +4,10 @@ var should = require('chai').should(),
     unescape = scapegoat.unescape;
 
 describe('#escape', function() {
+  it("is a function", function(){
+    escape.isFunction;
+  });
+
   it("converts & into &amp;", function() {
     escape('&').should.equal('&amp;');
   });
@@ -26,6 +30,10 @@ describe('#escape', function() {
 });
 
 describe('#unescape', function() {
+  it("is a function", function(){
+    unescape.isFunction;
+  });
+
   it('converts &amp; into &', function() {
     unescape('&amp;').should.equal('&');
   });
